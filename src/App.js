@@ -11,6 +11,7 @@ function App() {
         <Route path="/" exact component={Main} />
         <Route path="/edit" component={Edit} />
         <Route path="/card" component={Card} />
+        <Redirect from="/student-card" to="/" />
         <Redirect from="/main" to="/" />
       </Switch>
     </>
